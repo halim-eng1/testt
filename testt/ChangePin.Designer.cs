@@ -35,9 +35,9 @@ namespace testt
             label1 = new Label();
             label2 = new Label();
             label5 = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            ConfirmPasswordTextBox = new TextBox();
+            NewPasswordTextBox = new TextBox();
+            ChangeBtn = new Button();
             label7 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -100,53 +100,54 @@ namespace testt
             label2.AutoSize = true;
             label2.Font = new Font("Calisto MT", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.DarkSlateGray;
-            label2.Location = new Point(63, 218);
+            label2.Location = new Point(9, 214);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(166, 32);
+            label2.Size = new Size(242, 32);
             label2.TabIndex = 18;
-            label2.Text = "Confirm Pin";
+            label2.Text = "Confirm Password";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Calisto MT", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.DarkSlateGray;
-            label5.Location = new Point(63, 152);
+            label5.Location = new Point(9, 148);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(121, 32);
+            label5.Size = new Size(197, 32);
             label5.TabIndex = 17;
-            label5.Text = "New Pin";
+            label5.Text = "New Password";
             // 
-            // textBox2
+            // ConfirmPasswordTextBox
             // 
-            textBox2.Location = new Point(259, 217);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(274, 27);
-            textBox2.TabIndex = 20;
+            ConfirmPasswordTextBox.Location = new Point(259, 217);
+            ConfirmPasswordTextBox.Name = "ConfirmPasswordTextBox";
+            ConfirmPasswordTextBox.Size = new Size(274, 27);
+            ConfirmPasswordTextBox.TabIndex = 20;
             // 
-            // textBox1
+            // NewPasswordTextBox
             // 
-            textBox1.Location = new Point(259, 152);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(274, 27);
-            textBox1.TabIndex = 19;
+            NewPasswordTextBox.Location = new Point(259, 152);
+            NewPasswordTextBox.Name = "NewPasswordTextBox";
+            NewPasswordTextBox.Size = new Size(274, 27);
+            NewPasswordTextBox.TabIndex = 19;
+            NewPasswordTextBox.TextChanged += NewPasswordTextBox_TextChanged;
             // 
-            // button1
+            // ChangeBtn
             // 
-            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button1.BackColor = Color.DarkSlateGray;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(346, 264);
-            button1.Name = "button1";
-            button1.Size = new Size(103, 47);
-            button1.TabIndex = 21;
-            button1.Text = "CHANGE";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            ChangeBtn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ChangeBtn.BackColor = Color.DarkSlateGray;
+            ChangeBtn.FlatStyle = FlatStyle.Popup;
+            ChangeBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ChangeBtn.ForeColor = SystemColors.ButtonHighlight;
+            ChangeBtn.Location = new Point(346, 264);
+            ChangeBtn.Name = "ChangeBtn";
+            ChangeBtn.Size = new Size(103, 47);
+            ChangeBtn.TabIndex = 21;
+            ChangeBtn.Text = "CHANGE";
+            ChangeBtn.UseVisualStyleBackColor = true;
+            ChangeBtn.Click += button1_Click;
             // 
             // label7
             // 
@@ -168,9 +169,9 @@ namespace testt
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(666, 401);
             Controls.Add(label7);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(ChangeBtn);
+            Controls.Add(ConfirmPasswordTextBox);
+            Controls.Add(NewPasswordTextBox);
             Controls.Add(label2);
             Controls.Add(label5);
             Controls.Add(panel1);
@@ -199,9 +200,9 @@ namespace testt
         private Label label1;
         private Label label2;
         private Label label5;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox ConfirmPasswordTextBox;
+        private TextBox NewPasswordTextBox;
+        private Button ChangeBtn;
         private Label label7;
         private PictureBox pictureBox1;
     }

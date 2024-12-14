@@ -105,6 +105,36 @@ namespace testt
                 throw new NotImplementedException();
             }
 
+            // Change Password
+
+            public static bool ChangePassword(string cardNumber, string newPassword)
+            {
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(ConnectionString))
+                    {
+                        connection.Open();
+                        string query = "UPDATE Users SET Password = @Password WHERE CardNumber = @CardNumber";
+
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@Password", newPassword);
+                            command.Parameters.AddWithValue("@CardNumber", cardNumber);
+
+                            int rowsAffected = command.ExecuteNonQuery();
+                            return rowsAffected > 0; // يرجع true إذا تم تحديث الصف
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // التعامل مع أي خطأ
+                    MessageBox.Show($"Error: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+
+
             //fast cash
 
 

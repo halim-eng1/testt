@@ -48,8 +48,8 @@ namespace testt
         private void button1_Click(object sender, EventArgs e)
         {
             // Conect to Database..
-            string cardNumber = textBox1.Text; // TextBox الخاص بـ Card Num
-            string password = textBox2.Text;  // TextBox الخاص بـ Password
+            string cardNumber = cardNumberTextBox.Text; // TextBox الخاص بـ Card Num
+            string password = PasswordTextBox.Text;  // TextBox الخاص بـ Password
 
             // Connection String
             string connectionString = @"Data Source=HALIM\SQLEXPRESS;Initial Catalog=ATMDatabase;Integrated Security=True;TrustServerCertificate=True;";

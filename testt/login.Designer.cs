@@ -35,8 +35,8 @@
             pictureBox1 = new PictureBox();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            cardNumberTextBox = new TextBox();
+            PasswordTextBox = new TextBox();
             button1 = new Button();
             label5 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -130,20 +130,20 @@
             label4.Text = "Password";
             label4.Click += label4_Click;
             // 
-            // textBox1
+            // cardNumberTextBox
             // 
-            textBox1.Location = new Point(385, 259);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(274, 34);
-            textBox1.TabIndex = 7;
-            textBox1.TextChanged += textBox1_TextChanged;
+            cardNumberTextBox.Location = new Point(385, 259);
+            cardNumberTextBox.Name = "cardNumberTextBox";
+            cardNumberTextBox.Size = new Size(274, 34);
+            cardNumberTextBox.TabIndex = 7;
+            cardNumberTextBox.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // PasswordTextBox
             // 
-            textBox2.Location = new Point(385, 324);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(274, 34);
-            textBox2.TabIndex = 8;
+            PasswordTextBox.Location = new Point(385, 324);
+            PasswordTextBox.Name = "PasswordTextBox";
+            PasswordTextBox.Size = new Size(274, 34);
+            PasswordTextBox.TabIndex = 8;
             // 
             // button1
             // 
@@ -188,8 +188,8 @@
             Controls.Add(panel2);
             Controls.Add(label5);
             Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(PasswordTextBox);
+            Controls.Add(cardNumberTextBox);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
@@ -218,8 +218,8 @@
         private PictureBox pictureBox1;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox cardNumberTextBox;
+        private TextBox PasswordTextBox;
         private Button button1;
         private Label label5;
         private Label label6;
