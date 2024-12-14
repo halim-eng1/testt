@@ -53,7 +53,7 @@ namespace testt
 
         private void WIDTHROW_Load(object sender, EventArgs e)
         {
-           DisplayBalance();
+            DisplayBalance();
         }
 
         private void Balancelbl_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace testt
                 decimal currentBalance = DatabaseHelper.GetBalance(_cardNumber);
 
                 // التحقق إذا كان الرصيد كافٍ
-                if (currentBalance >= amount && amount <= 8000)
+                if (currentBalance >= amount && amount <= 8000 && amount >= 50)
                 {
                     // تحديث الرصيد في قاعدة البيانات
                     DatabaseHelper.UpdateBalance(_cardNumber, amount);
@@ -120,7 +120,7 @@ namespace testt
         //Button click
         private void button1_Click(object sender, EventArgs e)
         {
-           // decimal amountToWithdraw = Convert.ToDecimal(WithdrawAmountTextBox.Text); // قراءة المبلغ المدخل
+            // decimal amountToWithdraw = Convert.ToDecimal(WithdrawAmountTextBox.Text); // قراءة المبلغ المدخل
 
 
             // التحقق من أن الحقل ليس فارغًا
@@ -148,25 +148,25 @@ namespace testt
 
 
 
-            //decimal currentBalance = DatabaseHelper.GetBalance(_cardNumber); // استرجاع الرصيد الحالي
+        //decimal currentBalance = DatabaseHelper.GetBalance(_cardNumber); // استرجاع الرصيد الحالي
 
-            //if (amountToWithdraw > 0 && amountToWithdraw <= currentBalance && amountToWithdraw <= 8000)
-            //{
-            //    bool success = DatabaseHelper.UpdateBalance(_cardNumber, amountToWithdraw);
-            //    if (success)
-            //    {
-            //        MessageBox.Show($" {amountToWithdraw} pounds were successfully withdrawn.");
-            //        Balancelbl.Text = $" {currentBalance - amountToWithdraw:c}"; // تحديث العرض
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Error during withdrawal. Please try again.");
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Invalid withdrawal amount.");
-            //}
+        //if (amountToWithdraw > 0 && amountToWithdraw <= currentBalance && amountToWithdraw <= 8000)
+        //{
+        //    bool success = DatabaseHelper.UpdateBalance(_cardNumber, amountToWithdraw);
+        //    if (success)
+        //    {
+        //        MessageBox.Show($" {amountToWithdraw} pounds were successfully withdrawn.");
+        //        Balancelbl.Text = $" {currentBalance - amountToWithdraw:c}"; // تحديث العرض
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Error during withdrawal. Please try again.");
+        //    }
+        //}
+        //else
+        //{
+        //    MessageBox.Show("Invalid withdrawal amount.");
+        //}
 
 
         //}
@@ -202,6 +202,11 @@ namespace testt
         }
 
         private void WithdrawAmountTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

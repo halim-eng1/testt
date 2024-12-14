@@ -203,6 +203,7 @@
             label4.Size = new Size(297, 18);
             label4.TabIndex = 39;
             label4.Text = "The maximum withdrawal is 8000 at a time.";
+            label4.Click += label4_Click;
             // 
             // WIDTHROW
             // 

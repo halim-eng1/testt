@@ -65,7 +65,7 @@ namespace testt
                 decimal currentBalance = DatabaseHelper.GetBalance(_cardNumber);
 
                 // التحقق إذا كان الرصيد كافٍ
-                if (amount > 0 && amount <= 30000)
+                if (amount >= 50 && amount <= 30000)
                 {
                     // تحديث الرصيد في قاعدة البيانات
                     DatabaseHelper.UpdateBalance(_cardNumber, -amount);
