@@ -176,6 +176,7 @@
             Balancelbl.Size = new Size(184, 32);
             Balancelbl.TabIndex = 37;
             Balancelbl.Text = "BalancInCard";
+            Balancelbl.Click += Balancelbl_Click;
             // 
             // label3
             // 

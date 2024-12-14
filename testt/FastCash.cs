@@ -68,8 +68,8 @@ namespace testt
         {
             // إظهار رسالة تأكيد للمستخدم
             DialogResult result = MessageBox.Show(
-                $"Do you want to withdraw {amount} pounds?",
-                "تأكيد السحب",
+                $"Do you want to WITHDRAW {amount} pounds?",
+                "CONFIRM",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
             );

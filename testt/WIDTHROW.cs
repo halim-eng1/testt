@@ -96,10 +96,10 @@ namespace testt
 
         private void ConfirmWithdraw(decimal amount)
         {
-            // إظهار رسالة تأكيد للمستخدم
+            // إظهار رسالة تأكيد السحب للمستخدم
             DialogResult result = MessageBox.Show(
-                $"Do you want to withdraw {amount} pounds?",
-                "تأكيد السحب",
+                $"Do you want to WITHDRAW {amount} pounds?",
+                "CONFIRM",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
             );
