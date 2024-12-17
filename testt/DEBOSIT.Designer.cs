@@ -116,6 +116,7 @@
             AmountToDepositTextBox.Name = "AmountToDepositTextBox";
             AmountToDepositTextBox.Size = new Size(295, 27);
             AmountToDepositTextBox.TabIndex = 23;
+            AmountToDepositTextBox.TextChanged += AmountToDepositTextBox_TextChanged;
             // 
             // label5
             // 

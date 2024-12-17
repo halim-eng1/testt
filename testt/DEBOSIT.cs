@@ -133,29 +133,34 @@ namespace testt
         // Anthoer way to make DEBOSIT....===========....................................//
 
 
-            //decimal AmountToDeposit = Convert.ToDecimal(AmountToDepositTextBox.Text); // قراءة المبلغ المدخل
-            //decimal currentBalance = DatabaseHelper.GetBalance(_cardNumber); // استرجاع الرصيد الحالي
+        //decimal AmountToDeposit = Convert.ToDecimal(AmountToDepositTextBox.Text); // قراءة المبلغ المدخل
+        //decimal currentBalance = DatabaseHelper.GetBalance(_cardNumber); // استرجاع الرصيد الحالي
 
-            //if (AmountToDeposit > 0 && AmountToDeposit <= 30000)
-            //{
-            //    bool success = DatabaseHelper.UpdateBalance(_cardNumber, -AmountToDeposit);
-            //    if (success)
-            //    {
-            //        MessageBox.Show($" {AmountToDeposit} pounds were successfully deposited.");
-            //        Balancelbl.Text = $" {currentBalance + AmountToDeposit:c}"; // تحديث العرض
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Error during depositing. Please try again.");
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Invalid Deeposited Amount.");
-            //}
+        //if (AmountToDeposit > 0 && AmountToDeposit <= 30000)
+        //{
+        //    bool success = DatabaseHelper.UpdateBalance(_cardNumber, -AmountToDeposit);
+        //    if (success)
+        //    {
+        //        MessageBox.Show($" {AmountToDeposit} pounds were successfully deposited.");
+        //        Balancelbl.Text = $" {currentBalance + AmountToDeposit:c}"; // تحديث العرض
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Error during depositing. Please try again.");
+        //    }
+        //}
+        //else
+        //{
+        //    MessageBox.Show("Invalid Deeposited Amount.");
+        //}
         //}
 
         private void Balancelbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AmountToDepositTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

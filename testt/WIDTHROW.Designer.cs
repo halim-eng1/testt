@@ -94,6 +94,7 @@
             label1.Size = new Size(325, 50);
             label1.TabIndex = 1;
             label1.Text = "ATM SYSTEM";
+            label1.Click += label1_Click;
             // 
             // label2
             // 

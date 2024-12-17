@@ -38,7 +38,6 @@
             cardNumberTextBox = new TextBox();
             PasswordTextBox = new TextBox();
             button1 = new Button();
-            label5 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel2 = new Panel();
             panel1.SuspendLayout();
@@ -159,18 +158,6 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Calisto MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.DarkSlateGray;
-            label5.Location = new Point(486, 437);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(82, 22);
-            label5.TabIndex = 10;
-            label5.Text = "Sign Up";
-            // 
             // panel2
             // 
             panel2.BackColor = Color.DarkSlateGray;
@@ -186,7 +173,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(816, 552);
             Controls.Add(panel2);
-            Controls.Add(label5);
             Controls.Add(button1);
             Controls.Add(PasswordTextBox);
             Controls.Add(cardNumberTextBox);
@@ -221,7 +207,6 @@
         private TextBox cardNumberTextBox;
         private TextBox PasswordTextBox;
         private Button button1;
-        private Label label5;
         private Label label6;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panel2;

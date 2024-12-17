@@ -46,6 +46,9 @@ namespace testt
                 MessageBox.Show("Password changed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 NewPasswordTextBox.Clear();
                 ConfirmPasswordTextBox.Clear();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
             }
             else
             {
